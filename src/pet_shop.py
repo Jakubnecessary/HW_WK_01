@@ -11,9 +11,14 @@ def get_total_cash(pet_shop):
     return pet_shop["admin"]["total_cash"]
 
 #   Function add cash  20
+
 def add_or_remove_cash(pet_shop, cash):
     pet_shop["admin"]["total_cash"] += cash
-    
+
+# # Function remove cash 19
+
+def add_or_remove_cash(pet_shop, cash_remove):
+    pet_shop["admin"]["total_cash"] += cash_remove
 
 
 
