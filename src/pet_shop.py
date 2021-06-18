@@ -20,10 +20,21 @@ def add_or_remove_cash(pet_shop, cash):
 def add_or_remove_cash(pet_shop, cash_remove):
     pet_shop["admin"]["total_cash"] += cash_remove
 
-# Function fet pefs sold 18
+# Function get pets sold 18
 
 def get_pets_sold(pet_shop):
     return pet_shop["admin"]["pets_sold"]
+
+# Function to increse pets sold by 2
+
+def increase_pets_sold(pet_sold, add_pet):
+    pet_sold["admin"]["pets_sold"] += add_pet
+
+# function to get stock count = 6
+
+def get_stock_count(pet_shop):
+# mak ea for loop for this one 
+
 
 
 
