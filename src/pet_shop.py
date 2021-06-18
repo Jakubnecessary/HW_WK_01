@@ -20,6 +20,11 @@ def add_or_remove_cash(pet_shop, cash):
 def add_or_remove_cash(pet_shop, cash_remove):
     pet_shop["admin"]["total_cash"] += cash_remove
 
+# Function fet pefs sold 18
+
+def get_pets_sold(pet_shop):
+    return pet_shop["admin"]["pets_sold"]
+
 
 
 
