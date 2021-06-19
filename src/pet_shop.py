@@ -57,13 +57,9 @@ def get_pets_by_breed(pet_shop, pet_breed):
 # pet_shop["pets"]["name"]      13 
 
 def find_pet_by_name(pet_shop, pet_name):
-    pet_name_im_looking_for = []
     for pet in pet_shop["pets"]:
-        if pet["name"] == "Arthur":
-            pet_name_im_looking_for.append(pet_name["name"])
-    return pet_name_im_looking_for
-
-
+        if pet["name"] == pet_name:
+            return pet["name"]
 
 
 
