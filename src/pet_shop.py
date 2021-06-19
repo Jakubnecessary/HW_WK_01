@@ -40,12 +40,16 @@ def get_stock_count(pets_count):
     return len(pets_count["pets"])
 
 # function to get  1 pet by breed British Shorthair
-#  make a loop "pets" "breed"  15
+#  make a for
+# this one is not returning anything
+#  loop "pets" "breed"  and .append to empty list 15
 
-def get_pets_by_breed(pet, pets):
-    for pet in pets:
-        if pet["pets"]["breed"] == "British Shorthair":
-            return len(pet["pets"]["breed"])
+def get_pets_by_breed(pet, pet_breed):
+    pet_im_looking_for = []
+    for pet in pet["pets"]["breed"]:
+        if pet["pets"]["breed"] == pet_breed:
+            pet_im_looking_for.append(pet)
+            
 
 
 
