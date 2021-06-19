@@ -43,16 +43,25 @@ def get_stock_count(pets_count):
 #  make a for loop
 # python already understands that this is an object pet
 #  loop pet_shop"pets" pet"breed" 
-#  and .append to empty list 15
+#  and .append to empty list 15/14 both passed
 
 def get_pets_by_breed(pet_shop, pet_breed):
-    pet_im_looking_for = []
+    pet_breed_im_looking_for = []
     for pet in pet_shop["pets"]:
         if pet["breed"] == pet_breed:
-            pet_im_looking_for.append(pet)
-    return pet_im_looking_for
+            pet_breed_im_looking_for.append(pet)
+    return pet_breed_im_looking_for
 
-# 
+# funnction find pet 
+# by name "Arthur" in 
+# pet_shop["pets"]["name"]      13 
+
+def find_pet_by_name(pet_shop, pet_name):
+    pet_name_im_looking_for = []
+    for pet in pet_shop["pets"]:
+        if pet["name"] == "Arthur":
+            pet_name_im_looking_for.append(pet_name["name"])
+    return pet_name_im_looking_for
 
 
 
