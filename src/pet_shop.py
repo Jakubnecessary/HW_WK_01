@@ -66,7 +66,7 @@ def find_pet_by_name(pet_shop, pet_name):
 # .remove     11
 
 def remove_pet_by_name(pet_shop, pet_name):
-    pet_to_remove = find_pet_by_name
+    pet_to_remove = find_pet_by_name(pet_shop, pet_name)
     pet_shop["pets"].remove(pet_to_remove)
     
 
