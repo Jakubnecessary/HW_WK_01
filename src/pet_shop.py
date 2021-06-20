@@ -54,12 +54,22 @@ def get_pets_by_breed(pet_shop, pet_breed):
 
 # funnction find pet 
 # by name "Arthur" in 
-# pet_shop["pets"]["name"]      13 
+# pet_shop["pets"]["name"]      13/12 works for both
 
 def find_pet_by_name(pet_shop, pet_name):
     for pet in pet_shop["pets"]:
         if pet["name"] == pet_name:
-            return pet["pets"]["name"]
+            return pet
+
+# function  remove by name
+#  should remove "Arthur"
+# .remove     11
+
+def remove_pet_by_name(pet_shop, pet_name):
+    pet_to_remove = find_pet_by_name
+    pet_shop["pets"].remove(pet_to_remove)
+    
+
 
 
 
