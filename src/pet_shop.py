@@ -93,3 +93,11 @@ def get_customer_cash(customers):
 def remove_customer_cash(customers, remove_cash):
     customers["cash"] -= remove_cash
 
+# function to get customer pet count
+# this one will return 0 
+# as lists of "pets" are empty 
+# just return len of        7
+
+def get_customer_pet_count(customers):
+    return len(customers["pets"])
+
