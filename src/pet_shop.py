@@ -101,3 +101,17 @@ def remove_customer_cash(customers, remove_cash):
 def get_customer_pet_count(customers):
     return len(customers["pets"])
 
+
+# function to add a pet to
+#  customer 
+# i think its gonna be append
+#  since we are adding  6
+
+def add_pet_to_customer(customers, pet_name):
+    pet_to_add = find_pet_by_name(customers, pet_name)
+    customers["pets"].append(pet_to_add)
+
+# MVP DONE
+# STARTING OPTIONAL (boolean value true or false)
+
+
