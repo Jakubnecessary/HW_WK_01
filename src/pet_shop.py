@@ -63,15 +63,33 @@ def find_pet_by_name(pet_shop, pet_name):
 
 # function  remove by name
 #  should remove "Arthur"
-# .remove     11
+# .remove           11
 
 def remove_pet_by_name(pet_shop, pet_name):
     pet_to_remove = find_pet_by_name(pet_shop, pet_name)
     pet_shop["pets"].remove(pet_to_remove)
     
 
+# function to add pet to stock
+# should add new one
+# same as before
+# but this time .append        10
+
+def add_pet_to_stock(pet_shop, new_pet):
+    pet_to_add = find_pet_by_name(pet_shop, new_pet)
+    pet_shop["pets"].append(pet_to_add)
 
 
+#  function to get customer cash 
+# (just return value of 100 for 1 customer)    9
+
+def get_customer_cash(customers):
+    return customers["cash"]
 
 
+# function to remove customer cash 
+# by 100/from1000 to 900     8
+
+def remove_customer_cash(customers, remove_cash):
+    customers["cash"] -= remove_cash
 
